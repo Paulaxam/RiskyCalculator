@@ -30,7 +30,7 @@ botones.forEach(element => {
 
 function obtenerDato(e) {
     let boton = e.target.id;
-
+    pantalla.classList.remove('smalltxt');
     switch (boton) {
         case 'n1':
             if(numero.length <= 10) {
@@ -188,7 +188,7 @@ function obtenerDato(e) {
                 preans = String(datos[datos.length-1]);
 
                 if (preans.length >= 11) {
-                    operacion.classList.add('smalltxt')
+                    operacion.innerHTML = '';
                     pantalla.classList.add('smalltxt');
                     ans = "Too long, didn't read 😘"
                 } else {
@@ -199,7 +199,7 @@ function obtenerDato(e) {
                 if(datos.length === 4 && datos[3] === '%' && datos[1] === 'x') {
                     ans = datos[0]*datos[2]*0.01;
                 } else {
-                    operacion.classList.add('smalltxt')
+                    operacion.innerHTML = '';
                     pantalla.classList.add('smalltxt');
                     ans = 'Are you serious?'
                 }

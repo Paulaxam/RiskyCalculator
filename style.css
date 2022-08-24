@@ -13,7 +13,26 @@ body {
     justify-content: center;
 }
 
+h1 {
+    font-family:'DynaPuff', cursive;
+    color: white;
+    font-size: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 11px;
+    left: 19px;
+}
+
+p.disclaimer {
+    position: absolute;
+    bottom: -24px;
+    right: 0px;
+    color: #115804;
+    font-size: 11px;
+}
+
 div.cal-container {
+    position: relative;
     width: 320px;
     height: 500px;
     display: grid;
