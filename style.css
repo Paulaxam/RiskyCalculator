@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 251, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.cal-container {
+    width: 320px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:  2fr repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(22, 22, 22);
+    border-radius: 30px;
+    padding: 30px 20px;
+    font-family:'DynaPuff', cursive;
+    font-size: 24px;
+    box-shadow: 
+        2px 2px 10px rgb(0 0 0), 
+        -2px -2px 10px rgb(238 236 236 / 67%);
+    border: 3px solid rgb(15, 15, 15);
+}
+
+.boton {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(4, 59, 4);
+    width: 95%;
+    height: 95%;
+    font-family:'DynaPuff', cursive;
+    font-size: 24px;
+    color: white;
+    border-radius: 30px;
+    box-shadow: 
+        2px 2px 8px rgb(0 0 0 / 20%),
+        -2px -2px 5px rgba(209, 207, 207, 0.041);
+    border: none;
+}
+
+.pantalla {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end ;
+    align-items: center;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    width: 100%;
+    height: 95%;
+    color: rgb(15, 15, 15);
+    background-color: whitesmoke;
+    border-radius: 30px;
+    justify-self: center;
+    align-self: flex-start;
+    border: 2px solid rgb(4, 59, 4);
+    box-shadow: 
+        2px 2px 8px rgb(0 0 0 / 20%),
+        -2px -2px 5px rgba(209, 207, 207, 0.041);
+    padding-bottom: 5px;
+}
+
+.pantalla p {
+    padding-right: 20px;
+    font-size: 32px;
+    width: 100%;
+    height: 45%;
+    text-align: right;
+}
+
+.pantalla p.smalltxt {
+    font-size: 20px;
+}
+
+#n0 {
+    grid-column: 1/3;
+    grid-row: 6/7;
+}
+
+#n1 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+#n2 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+#n3 {
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+
+#n4 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+#n5 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+#n6 {
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+#n7 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#n8 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#n9 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+#borrar {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+#punto {
+    grid-column: 3/4;
+    grid-row: 6/7;
+}
+
+#igual {
+    grid-column: 4/5;
+    grid-row: 6/7;
+}
+
+#suma {
+    grid-column: 4/5;
+    grid-row: 4/6;
+}
+
+#resta {
+    grid-column: 4/5;
+    grid-row: 3/4; 
+}
+
+#div {
+    grid-column: 3/4;
+    grid-row: 2/3; 
+}
+
+#mult {
+    grid-column: 2/3;
+    grid-row: 2/3; 
+}
